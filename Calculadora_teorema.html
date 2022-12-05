@@ -3,7 +3,12 @@
 
 <head>
 	<script type="text/javascript" src="func.js"></script>
-
+	<link rel="manifest" href="./manifest.json">
+	<script type="text/javascript">
+		if ("serviceWorker" in navigator) {
+			navigator.serviceWorker.register("sw.js");
+		}
+	</script>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Trigonometría &mdash; Campo De Estudio</title>
